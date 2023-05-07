@@ -1,5 +1,8 @@
-# vue-element-ui-study01
-
+# tauri-magic-web
+基于rust语言的tarui封装的Magic Web客户端GUI  
+Magic Web client GUI encapsulated in tarui based on rust language
+![](README_files/1.jpg)
+![](README_files/2.jpg)
 ## Project setup
 ```
 npm install
