@@ -133,3 +133,7 @@ node_modules/
 dist/
 dist.zip
 package-lock.json
+*.lock
+yarn.lock
+#Electron-builder output
+/dist_electron
