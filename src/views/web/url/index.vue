@@ -247,13 +247,22 @@ export default {
     },
 
     // 更新Web地址
+    // 更新Web地址
     updateUrl(item) {
-
+      return new Promise((resolve, reject) => {
+        const index = this.list.findIndex((el) => el.id === item.id);
+        if (index !== -1) {
+          // 更新对应索引的项
+          this.list.splice(index, 1, item);
+          resolve(true);
+        } else {
+          reject(new Error('找不到要更新的项'));
+        }
+      });
     },
 
     // 删除Web地址
     async deleteUrl(id) {
-      debugger;
       const index = this.list.findIndex(item => item.id === id);
       this.list.splice(index, 1);
       return {}
