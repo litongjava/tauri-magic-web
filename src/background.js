@@ -1,12 +1,12 @@
 'use strict';
 
 import { app, protocol, BrowserWindow } from 'electron'
-import contextMenu from 'electron'
+import contextMenu from 'electron-context-menu'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
-// Scheme must be registered before the app is ready
+// Scheme must be registered be`fore the app is ready
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } }
 ]);
